@@ -1,7 +1,201 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>Testing.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <!-- <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    /> -->
+
+     <!--Kit code from FontAwesome icon library-->
+     <script src="https://kit.fontawesome.com/34effe81b7.js" crossorigin="anonymous"></script>
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Victoria Li | Software Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <h1>VICTORIA LI</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <!-- More about -->
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Victoria Li and I am currently a rising senior at Princeton University. 
+          I am majoring in Computer Science with a minor in Statistics and Machine Learning. I am 
+          interested in working as a software developer in the future. 
+        </p>
+        <button class="accordion">
+            <h3>Coursework</h3>
+        </button>
+        <div class="panel">
+            <ul class="courses">
+                <li> Data Structures and Algorithms </li>
+                <li> Statistics </li>
+                <li> Programming Systems (C) </li>
+                <li> Computational Reasoning </li>
+                <li> Machine Learning </li>
+                <li> Ethics of Machine Learning </li>
+                <li> Mathematics for Machine Learning </li>
+                <li> Full Stack Programming </li>
+                <li> Machine Learning in Medicine </li>
+                <li> Distributed System </li>
+            </ul>
+        </div>
+        <button class="accordion">
+            <h3>Organizations</h3>
+        </button>
+        <div class="panel">
+            <ul class="courses">
+                <li> Society of Women Engineers (2021-Present) </li>
+                <li> Princeton Women in Computer Science (2021-Present) </li>
+                <li> Engineers without Border (2022-2023) </li>
+                <li> Daily Princetonian (2022-Present) </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <p>
+            <b>Languages:</b>  Java, Python, C, Go, JavaScript, 
+            SQL (PostgreSQL, SQLite), Assembly (ARMv8), 
+            LaTeX, R, HTML, CSS 
+        </p>
+        <p>
+            <b>Tools/Frameworks:</b> Git/Github, QT (PyQT5), Bootstrap, 
+            Flask, Jinja2, jQuery, Ajax, ElephantSQL, Render, 
+            Makefile, gdb, Linux/Unix, bash 
+        </p>
+        <p>
+            <b>Applications:</b> Visual Studio Code, IntelliJ, RStudio 
+        </p>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="assets/images/mri.jpg"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Brain Tumor Classification</h3>
+            <h5 class="project-subtitle">Feb. 2024 - Apr. 2024</h5>
+            <p class="project-details">
+                This project aimed to increase accuracy of brain tumor type classification
+                in MRI images by using machine learning. It integrates both supervised and
+                unsupervised learning through PCA, CNN, and SVM to create hybrid models
+                with accuracies of over 90%. 
+            </p>
+            <a href="https://youtu.be/sMKPibMiFaI?si=gpX710TVe1tyB7zz" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/ethereum.png"
+              alt="netflic-clone"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Ethereum Gas Prices Prediction</h3>
+            <h5 class="project-subtitle">Apr. 2024</h5>
+            <p class="project-details">
+              Different machine learning models were used to predict Ethereum gas prices 
+              from historical on chain data. The performance of linear regression, LSTM, 
+              and GRU models were evaluated on prediction of gas prices. It was concluded 
+              that LSTM and GRU resulted in better performance overall. 
+            </p>
+            <a href="https://recondite-monday-e86.notion.site/A-Machine-Learning-Approach-to-Forecasting-Gas-Prices-using-Historical-On-Chain-Data-7278895c082f47c4b4931bae9bd689d9" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/camdenlogo.jpeg"
+              alt="greeny-earth"
+              loading="lazy"
+              class="camden-project-pic"
+            />
+            <h3 class="project-title">Camden Dream Center App</h3>
+            <h5 class="project-subtitle">Sep. 2023 - Dec. 2023</h5>
+            <p class="project-details">
+                This responsive web app serves as a tool for the non profit organization
+                Camden Dream Center. It allows the organization to be able to organize 
+                data about their food pantry and also has a messaging function to 
+                ensure communication between the organization, families, and donors. 
+            </p>
+            <a href="https://camdencounter.onrender.com/" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
+      </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Connect with me!</h2>
+        <div class="socials">
+            <a href="https://github.com/victorial63" target="_blank"><i class="fa-brands fa-github fa-2xl socicon"></i></a>
+            <a href="https://www.linkedin.com/in/-victoria-li-" target="_blank"><i class="fa-brands fa-linkedin fa-2xl socicon"></i></a>
+            <a href="mailto:vl5971@princeton.edu" target="_blank"><i class="fa-solid fa-envelope fa-2xl socicon"></i></a>
+        </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
